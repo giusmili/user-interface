@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", e =>{ // un écouteur js avec l'ob
     console.log(e.target)
 
     /* prompt */
-    let firstName, lastName, age, tabUser
+    let firstName, lastName, age, tabUser, element
+        
+        element = document.querySelector("section h2")
 
         firstName = String(window.prompt("Ajoutez votre nom",""))
         lastName = String(window.prompt("Ajoutez votre prénom",""))
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", e =>{ // un écouteur js avec l'ob
         console.info(tabUser)
 
         /* zone de stockage */
+
+        element.innerHTML = `🚀 Bonjour <strong>${lastName}</strong> voici vos données`
 
         localStorage.setItem("user", JSON.stringify(tabUser)) /* item + valeur */
 
