@@ -18,9 +18,15 @@ document.addEventListener("DOMContentLoaded", e =>{ // un écouteur js avec l'ob
 
         /* zone de stockage */
 
-        element.innerHTML = `🚀 Bonjour <strong>${lastName}</strong> voici vos données`
+       
 
-        localStorage.setItem("user", JSON.stringify(tabUser)) /* item + valeur */
+        let stock = localStorage.setItem("user", JSON.stringify(tabUser)) /* item + valeur */
+
+        let unstock = localStorage.getItem("user")
+        let userIndex = JSON.parse(unstock).join(" / ")
+        console.log(userIndex)
+
+        element.innerHTML = `🚀 Bonjour <strong>${lastName}</strong> voici vos données ${userIndex}`
 
 
 })
