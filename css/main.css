@@ -12,6 +12,7 @@ header h1{
     background-color: var(--header-title); 
     color: var(--header-title-text);
     font-size: var(--header-font-size);
+    font-weight: 500;
 
 }
 main{
