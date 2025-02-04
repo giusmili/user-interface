@@ -16,7 +16,7 @@ header h1{
 }
 main{
     display: flex;
-/*     flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -63,6 +63,20 @@ section p{
     background-color: #efad14;
     color: #222;
     border: solid .1rem transparent;
+}
+figure{
+    max-width: 40rem;
+    display: block;
+    
+}
+figure figcaption *{
+    text-align: center;
+}
+figure img{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+    /* aspect-ratio: 4 / 4; */
 }
 footer{
     text-align: center;
