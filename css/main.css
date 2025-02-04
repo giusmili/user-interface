@@ -26,6 +26,7 @@ main{
     align-items: center;
 }
 section{
+    border-radius: .8rem;
     max-width: 80rem;
     background-color: #fafafafa;
     box-shadow: 0 0 10rem rgba(64, 62, 62, 0.5);
@@ -38,6 +39,7 @@ section{
     background-color: #222;
     color: var(--header-title-text);
     padding: 1rem;
+    border-radius: .8rem;
     }
 
     p{
