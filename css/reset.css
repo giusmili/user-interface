@@ -50,8 +50,11 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
-    
+    font-size: inherit;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+
 }
 
 /* Liens */
