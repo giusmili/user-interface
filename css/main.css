@@ -32,14 +32,24 @@ section{
     border: solid .1rem transparent;
     
 }
-section h2{
+section{
+
+    h2{
     background-color: #222;
     color: var(--header-title-text);
     padding: 1rem;
+    }
+    
+    p{
+        padding: 1rem; 
+    }
+   
 }
-section p{
-    padding: 1rem;
-}
+
+
+    
+    
+
 .btn-default{
     width: max-content;
     line-height: 3.5rem;
