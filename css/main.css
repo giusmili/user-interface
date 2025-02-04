@@ -13,6 +13,10 @@ header h1{
     color: var(--header-title-text);
     font-size: var(--header-font-size);
     font-weight: 500;
+    text-shadow: .2rem .2rem 0 #584bac,
+    -.2rem -.2rem 0 #584bac,
+    -.2rem .2rem 0 #584bac,
+    .2rem -.2rem 0 #584bac;
 
 }
 main{
