@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", e =>{ // un écouteur js avec l'ob
                 firstName = String(window.prompt("Ajoutez votre nom",""))
                 lastName = String(window.prompt("Ajoutez votre prénom",""))
                 age = Number(window.prompt("Ajoutez votre age",""))
+                
         
                 tabUser = []
         
