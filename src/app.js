@@ -26,23 +26,29 @@ document.addEventListener("DOMContentLoaded", e =>{ // un écouteur js avec l'ob
                 firstName = String(window.prompt("Ajoutez votre nom",""))
                 lastName = String(window.prompt("Ajoutez votre prénom",""))
                 age = Number(window.prompt("Ajoutez votre age",""))
-                
+
+                if(!firstName || !lastName || !age ){
+                    alert("tous les champs obligatoire") 
+                    location.reload()
+                }
+                else{
+                    tabUser = []
         
-                tabUser = []
-        
-                tabUser.push(firstName, lastName, age)
-        
-                console.info(tabUser)
-        
-                /* zone de stockage */
-        
-                stock = localStorage.setItem("user", JSON.stringify(tabUser)) /* item + valeur */
-        
-                unstock = localStorage.getItem("user")
-                userIndex = JSON.parse(unstock).join(" / ")
-                console.log(userIndex)
-        
-                element.innerHTML = `🚀 Bonjour <strong>${lastName}</strong> voici vos données ${userIndex}`
+                    tabUser.push(firstName, lastName, age)
+            
+                    console.info(tabUser)
+            
+                    /* zone de stockage */
+            
+                    stock = localStorage.setItem("user", JSON.stringify(tabUser)) /* item + valeur */
+            
+                    unstock = localStorage.getItem("user")
+                    userIndex = JSON.parse(unstock).join(" / ")
+                    console.log(userIndex)
+            
+                    element.innerHTML = `🚀 Bonjour <strong>${lastName}</strong> voici vos données ${userIndex}`
+                    
+                }
             }
         }
 
