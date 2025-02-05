@@ -1,0 +1,16 @@
+{
+  "name": "user",
+  "version": "1.0.0",
+  "description": "* Langages\r     - html\r     - css\r     - js",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --no-babelrc src -w -d js --preset=env"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
+ 
