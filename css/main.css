@@ -74,7 +74,9 @@ section{
         color: #222;
         border: solid .1rem transparent;
     }
-   
+   .warning{
+        color: rgba(139, 7, 7, 1);
+   }
 }
 
 

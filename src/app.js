@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", e =>{ // un écouteur js avec l'ob
 
                 if(!firstName || !lastName || !age ){
                     alert("tous les champs obligatoire") 
-                    location.reload()
+                   // location.reload()
+                    element.innerHTML = `<span class="warning">Tous les champs obligatoire!!!</span>`
                 }
                 else{
                     tabUser = []
